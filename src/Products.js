@@ -30,7 +30,7 @@ class Products extends Component {
       var newProductList = [];
       var newTotal = 0;
 
-      for(var i = 0; i < this.state.productList.count; ++i) {
+      for(var i = 0; i < this.state.productList.length; ++i) {
         let product = this.state.productList[i];
         if(i === index) {
           if(product.selected) {
@@ -73,6 +73,7 @@ class Products extends Component {
                             )
                     }</il>
                 </div>
+                <label>{this.state.total}</label>
             </div>
         );
     }
